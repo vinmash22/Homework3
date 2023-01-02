@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -35,5 +36,20 @@ public class Main {
         System.out.println("переменная 5 " + variable5);
         byte variable6 = 67;
         System.out.println("переменная 6 " + variable6);
+    }
+    public static void task3() {
+        System.out.println("Задача 3");
+        byte studentsLP = 23;
+        System.out.println("У Людмилы Павловны - " + studentsLP + " ученика");
+        byte studentsAS = 27;
+        System.out.println("У Анны Сергеевны - " + studentsAS + " учеников");
+        byte studentsEA = 30;
+        System.out.println("У Екатерины Андреевны - " + studentsEA + " учеников");
+        short totalPaper = 480;
+        System.out.println("Всего закупили " + totalPaper + " листов бумаги");
+        int totalStudents = studentsAS + studentsEA + studentsLP;
+        System.out.println("Всего учеников - " + totalStudents);
+        int forEveryone = totalPaper / totalStudents;
+        System.out.println("На каждого ученика рассчитано " + forEveryone + " листов бумаги");
     }
 }
