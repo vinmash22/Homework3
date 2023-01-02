@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -104,5 +105,16 @@ public class Main {
         short grPerKg = 1000;
         float weightKg = weightBreakfast/(float)grPerKg;
         System.out.println("Вес завтрака в килограммах - " + weightKg + " кг");
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        short loseWeightKg = 7;
+        short loseWeightG = 7 * 1000;
+        short losePerDay = 250;
+        int days1 = loseWeightG/losePerDay;
+        System.out.println(days1 + " дней уйдет на похудение, если спортсмен каждый день будет терять по 250 грамм");
+        short losePerDay2 = 500;
+        int days2 = loseWeightG/losePerDay2;
+        System.out.println(days2 + " дней уйдет на похудение, если спортсмен каждый день будет терять по 250 грамм");
     }
 }
