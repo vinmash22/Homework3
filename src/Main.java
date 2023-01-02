@@ -117,6 +117,8 @@ public class Main {
         short losePerDay2 = 500;
         int days2 = loseWeightG/losePerDay2;
         System.out.println(days2 + " дней уйдет на похудение, если спортсмен каждый день будет терять по 250 грамм");
+        int mean = (days1 + days2) / 2;
+        System.out.println(mean + " день в среднем уйдет на похудение");
     }
     public static void task8() {
         System.out.println("Задача 8");
