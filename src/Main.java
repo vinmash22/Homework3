@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -109,12 +110,36 @@ public class Main {
     public static void task7() {
         System.out.println("Задача 7");
         short loseWeightKg = 7;
-        short loseWeightG = 7 * 1000;
+        int loseWeightG = loseWeightKg * 1000;
         short losePerDay = 250;
         int days1 = loseWeightG/losePerDay;
         System.out.println(days1 + " дней уйдет на похудение, если спортсмен каждый день будет терять по 250 грамм");
         short losePerDay2 = 500;
         int days2 = loseWeightG/losePerDay2;
         System.out.println(days2 + " дней уйдет на похудение, если спортсмен каждый день будет терять по 250 грамм");
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        int anannualSalaryMasha = salaryMasha * 12;
+        int anannualSalaryDenis = salaryDenis * 12;
+        int anannualSalaryKristina = salaryKristina * 12;
+        float increasedSalarysalaryMasha = salaryMasha * 1.1f;
+        float increasedAnannualSalarysalaryMasha = increasedSalarysalaryMasha * 12;
+        float differenceMasha = increasedAnannualSalarysalaryMasha -  anannualSalaryMasha;
+        System.out.println("Маша теперь получает " + increasedSalarysalaryMasha + " рублей. Годовой доход вырос на "
+        + differenceMasha + " рублей.");
+        float increasedSalarysalaryDenis = salaryDenis * 1.1f;
+        float increasedAnannualSalarysalaryDenis = increasedSalarysalaryDenis * 12;
+        float differenceDenis = increasedAnannualSalarysalaryDenis -  anannualSalaryDenis;
+        System.out.println("Денис теперь получает " + increasedSalarysalaryDenis + " рублей. Годовой доход вырос на "
+                + differenceDenis + " рублей.");
+        float increasedSalarysalaryKristina = salaryKristina * 1.1f;
+        float increasedAnannualSalarysalaryKristina = increasedSalarysalaryKristina * 12;
+        float differenceKristina = increasedAnannualSalarysalaryKristina -  anannualSalaryKristina;
+        System.out.println("Кристина теперь получает " + increasedSalarysalaryKristina + " рублей. Годовой доход вырос на "
+                + differenceKristina + " рублей.");
     }
 }
