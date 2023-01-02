@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -70,9 +71,18 @@ public class Main {
         int minutesPerMonth = 60 * 24 * 3 * 30;
         int perMonth = perMinute * minutesPerMonth;
         System.out.println("За 1 месяц машина произвела " + perMonth + " штук бутылок");
-
-
-
+    }
+    public static void task5() {
+        System.out.println("Задача 5");
+        short totalPaint = 120;
+        short whitePaintOneClass = 2;
+        short brownPaintOneClass = 4;
+        int paintOneClass = whitePaintOneClass + brownPaintOneClass;
+        int sumClasses = totalPaint / paintOneClass;
+        int sumWhite = sumClasses * whitePaintOneClass;
+        int sumBrown = sumClasses * brownPaintOneClass;
+        System.out.println("В школе, где " + sumClasses + " классов, нужно " + sumWhite + " банок белой краски и " + sumBrown +
+                " банок коричневой краски.");
 
     }
 }
