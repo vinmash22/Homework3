@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -83,6 +84,25 @@ public class Main {
         int sumBrown = sumClasses * brownPaintOneClass;
         System.out.println("В школе, где " + sumClasses + " классов, нужно " + sumWhite + " банок белой краски и " + sumBrown +
                 " банок коричневой краски.");
-
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        short bananes = 5;
+        short weightBanane = 80;
+        short weightBananes = (short) (bananes * weightBanane);
+        short milk = 2;
+        short weight100Milk = 105;
+        short weightMilk = (short) (milk * weight100Milk);
+        short icecream = 2;
+        short weight1Icecream = 100;
+        short weightIcecream = (short) (icecream * weight1Icecream);
+        short eggs = 4;
+        short weightnEgg = 70;
+        short weightEggs = (short) (eggs * weightnEgg);
+        short weightBreakfast = (short) (weightBananes + weightMilk + weightIcecream + weightEggs);
+        System.out.println("Вес завтрака в граммах - " + weightBreakfast + " г");
+        short grPerKg = 1000;
+        float weightKg = weightBreakfast/(float)grPerKg;
+        System.out.println("Вес завтрака в килограммах - " + weightKg + " кг");
     }
 }
